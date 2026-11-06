@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Тест публикации — Вайб-сайты</title>
+<style>
+  body { margin:0; font-family:system-ui,sans-serif; background:linear-gradient(135deg,#1a1a2e,#16213e); color:#fff; min-height:100vh; display:flex; align-items:center; justify-content:center; }
+  .card { text-align:center; padding:48px; background:rgba(255,255,255,.06); border-radius:24px; backdrop-filter:blur(10px); }
+  h1 { margin:0 0 12px; font-size:32px; }
+  p { color:#a8b2d1; margin:6px 0; }
+  .ok { color:#4ade80; font-size:18px; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <p class="ok">✓</p>
+    <h1>Цепочка «код → GitHub → сайт» работает!</h1>
+    <p>Тестовая страница курса «Вайб-сайты»</p>
+    <p id="time"></p>
+  </div>
+  <script>document.getElementById('time').textContent = 'Опубликовано: ' + new Date().toLocaleString('ru-RU');</script>
+</body>
+</html>
